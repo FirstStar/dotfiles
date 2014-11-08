@@ -20,16 +20,30 @@ NeoBundle 'Shougo/vimproc',{
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neosnippet-snippets'
+
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'Shougo/vimfiler.vim'
+
 NeoBundle 'itchyny/lightline.vim'
+
 NeoBundle 'kana/vim-submode'
+
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle "osyo-manga/shabadou.vim"
 NeoBundle "osyo-manga/vim-watchdogs"
 NeoBundle "osyo-manga/unite-quickfix"
+
 NeoBundle "jceb/vim-hier"
+
 NeoBundle "rhysd/wandbox-vim"
+
 NeoBundle "rizzatti/dash.vim"
-NeoBundle "ryutorion/vim-itunes"
+
 NeoBundle "Shougo/vimshell.vim"
+
+NeoBundle "tpope/vim-fugitive"
+
+NeoBundle "tomtom/tcomment_vim"
+
+NeoBundle 'nathanaelkane/vim-indent-guides'

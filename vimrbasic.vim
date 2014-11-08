@@ -12,12 +12,8 @@ set tabstop=4
 set shiftwidth=4
 set viminfo=
 set list
-set listchars=tab:->,trail:-
+set listchars=tab:\ \ ,trail:-
+set notitle
 set nocindent
 let lisp_raingbow = 1
 
-" FILETYPE
-au BufNewFile,BufRead *.clisp setf lisp
-au BufNewFile,BufRead *.scheme setf lisp
-au BufNewFile,BufRead *.h setf cpp
-au BufNewFile,BufRead *m setf cpp
