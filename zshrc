@@ -115,6 +115,12 @@ alias tweet='tw'
 alias clojure='lein repl'
 
 ########################################
+# git command alias
+alias commit='git commit -a -m'
+alias pull='git pull'
+alias push='git push'
+
+########################################
 # file pass alias
 alias _prog='~/Documents/programming/'
 
