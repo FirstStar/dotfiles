@@ -1,5 +1,6 @@
 set nocompatible
 set autoindent
+set noundofile
 set showmode
 set showmatch
 set showcmd

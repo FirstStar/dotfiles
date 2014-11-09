@@ -1,8 +1,13 @@
 filetype plugin on
 
 if has('vim_starting')
-	set runtimepath+=~/.vim/bundle/neobundle.vim/
-	call neobundle#rc(expand('~/.vim/bundle'))
+	if has('win32') || has('win64')
+		set runtimepath+=/Vim/bundle/neobundle.vim/
+		call neobundle#rc(expand('/Vim/bundle'))
+	else	
+		set runtimepath+=~/.vim/bundle/neobundle.vim/
+		call neobundle#rc(expand('~/.vim/bundle'))
+	endif
 endif
 
 NeoBundle 'Shougo/neobundle.vim'
