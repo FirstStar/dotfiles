@@ -13,5 +13,8 @@ source ~/.dotfiles/vim/plugin.vim
 " color setting
 source ~/.dotfiles/vim/color.vim
 
+" syntax
+source ~/.dotfiles/vim/syntax.vim
+
 " key mapping
 source ~/.dotfiles/vim/keymap.vim

@@ -47,3 +47,5 @@ NeoBundle "tpope/vim-fugitive"
 NeoBundle "tomtom/tcomment_vim"
 
 NeoBundle 'nathanaelkane/vim-indent-guides'
+
+NeoBundle 'bronson/vim-trailing-whitespace'
