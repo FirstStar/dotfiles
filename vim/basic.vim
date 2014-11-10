@@ -3,7 +3,6 @@ set autoindent
 set smartindent
 
 set noundofile
->>>>>>> a457c298f4f38e8e537d9fb8008b57887e123929
 set showmode
 set showmatch
 set showcmd

@@ -16,5 +16,15 @@ let g:quickrun_config = {
 \	},
 \}
 
+" swift
+let g:quickrun_config = {
+	\	"swift" : {
+	\	"command" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift",
+	\	"cmdopt" : "",
+	\	"hook/time/enable" : 1,
+	\	},
+\}
+
+
 call watchdogs#setup(g:quickrun_config)
 let g:watchdogs_check_BufWritePost_enable = 1
