@@ -5,7 +5,7 @@ set antialias
 " An example for a Japanese version vimrc file.
 " 日本語版のデフォルト設定ファイル(vimrc) - Vim7用試作
 "
-" Last Change: 09-Nov-2014.
+" Last Change: 18-Nov-2014.
 " Maintainer:  MURAOKA Taro <koron.kaoriya@gmail.com>
 "
 " 解説:
@@ -208,3 +208,7 @@ endif
 
 "---------------------------------------------------------------------------
 
+if has('win32') || has('win64')
+  set undodir=$HOME/vim/vimundofile
+  set backupdir=$HOME/vim/vimbackupfile
+endif

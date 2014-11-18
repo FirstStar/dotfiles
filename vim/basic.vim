@@ -1,8 +1,6 @@
 set nocompatible
 set autoindent
 set smartindent
-
-set noundofile
 set showmode
 set showmatch
 set showcmd
@@ -25,4 +23,3 @@ set listchars=tab:\ \ ,trail:\ ,extends:<
 
 set nocindent
 let lisp_raingbow = 1
-
