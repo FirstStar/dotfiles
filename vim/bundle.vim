@@ -2,8 +2,8 @@ filetype plugin on
 
 if has('vim_starting')
 	if has('win32') || has('win64')
-		set runtimepath+=/Vim/bundle/neobundle.vim/
-		call neobundle#rc(expand('/Vim/bundle'))
+		set runtimepath+=$VIM/bundle/neobundle.vim/
+		call neobundle#rc(expand('/Program Files/Vim/bundle'))
 	else	
 		set runtimepath+=~/.vim/bundle/neobundle.vim/
 		call neobundle#rc(expand('~/.vim/bundle'))
@@ -54,3 +54,9 @@ NeoBundle "tomtom/tcomment_vim"
 NeoBundle 'nathanaelkane/vim-indent-guides'
 
 NeoBundle 'bronson/vim-trailing-whitespace'
+
+if has('win32') || has('win64')
+	NeoBundle 'taku25/VisualStudioController'
+	NeoBundle 'taku25/vim-visualstudio'
+endif
+

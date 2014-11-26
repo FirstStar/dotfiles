@@ -1,0 +1,28 @@
+skse loader 01060100 01CFFB691788FA14 6.1 (7601)
+runtime root = C:\program files (x86)\steam\steamapps\common\Skyrim\
+config path = C:\program files (x86)\steam\steamapps\common\Skyrim\Data\SKSE\skse.ini
+procPath = C:\program files (x86)\steam\steamapps\common\Skyrim\\TESV.exe
+launching: TESV.exe (C:\program files (x86)\steam\steamapps\common\Skyrim\\TESV.exe)
+dwSignature = FEEF04BD
+dwStrucVersion = 00010000
+dwFileVersionMS = 00010009
+dwFileVersionLS = 00200000
+dwProductVersionMS = 00010009
+dwProductVersionLS = 00200000
+dwFileFlagsMask = 00000017
+dwFileFlags = 00000000
+dwFileOS = 00000004
+dwFileType = 00000001
+dwFileSubtype = 00000000
+dwFileDateMS = 00000000
+dwFileDateLS = 00000000
+version = 0001000900200000
+steam exe
+hook call addr = 00F56831
+load lib addr = 0106B0B4
+dll = C:\program files (x86)\steam\steamapps\common\Skyrim\\skse_1_9_32.dll
+main thread id = 7888
+hookBase = 001F0000
+loadLibraryAAddr = 7756499F
+hook thread complete
+launching

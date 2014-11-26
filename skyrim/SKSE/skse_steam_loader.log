@@ -1,0 +1,29 @@
+skse loader 01060100 (steam) 01CFFB6917A498CC 6.1 (7601)
+base addr = 0F380000
+GetSystemTimeAsFileTime IAT = 0106B1D8
+original GetSystemTimeAsFileTime = 775634C9
+patched GetSystemTimeAsFileTime = 0F3816C0
+GetStartupInfoA IAT = 0106B1D0
+original GetStartupInfoA = 77560E00
+patched GetStartupInfoA = 0F3816E0
+InstallHook: thread = 7888 retaddr = 00F69112 hookSrc = 0
+appPath = C:\program files (x86)\steam\steamapps\common\Skyrim\TESV.exe
+dwSignature = FEEF04BD
+dwStrucVersion = 00010000
+dwFileVersionMS = 00010009
+dwFileVersionLS = 00200000
+dwProductVersionMS = 00010009
+dwProductVersionLS = 00200000
+dwFileFlagsMask = 00000017
+dwFileFlags = 00000000
+dwFileOS = 00000004
+dwFileType = 00000001
+dwFileSubtype = 00000000
+dwFileDateMS = 00000000
+dwFileDateLS = 00000000
+version = 0001000900200000
+steam exe
+dll = C:\program files (x86)\steam\steamapps\common\Skyrim\skse_1_9_32.dll
+old winmain = 0069D1D0
+OnHook: thread = 7888
+calling winmain

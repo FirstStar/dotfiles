@@ -4,6 +4,7 @@ if has('win32') || has('win64')
 	source $HOME/dotfiles/vim/vimplugin/snippet.vim
 	source $HOME/dotfiles/vim/vimplugin/unite.vim
 	source $HOME/dotfiles/vim/vimplugin/runs.vim
+	source $HOME/dotfiles/vim/vimplugin/visualstudio.vim
 else
 	source ~/.dotfiles/vim/vimplugin/common.vim
 	source ~/.dotfiles/vim/vimplugin/neocomplcache.vim
