@@ -18,6 +18,7 @@ cask
 cgal
 clisp
 cloog
+clozure-cl
 cmake
 cscope
 curl
@@ -83,7 +84,6 @@ lua
 luajit
 lynx
 lzo
-macvim
 make
 makedepend
 mercurial
@@ -113,6 +113,7 @@ readline
 reattach-to-user-namespace
 rlwrap
 ruby
+sbcl
 scala
 scons
 sqlite
