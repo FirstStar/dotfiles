@@ -46,6 +46,7 @@ NeoBundle "tomtom/tcomment_vim"
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'kovisoft/slimv'
+NeoBundle 'amdt/vim-niji'
 
 if has('win32') || has('win64')
 	NeoBundle 'taku25/VisualStudioController'
