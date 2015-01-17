@@ -56,6 +56,7 @@ gsettings-desktop-schemas
 gtk+
 gtk+3
 harfbuzz
+heroku-toolbelt
 hub
 icu4c
 ilmbase
@@ -77,6 +78,7 @@ libsigsegv
 libtasn1
 libtiff
 libtool
+libvo-aacenc
 libyaml
 little-cms2
 llvm

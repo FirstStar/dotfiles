@@ -3,15 +3,18 @@ filetype plugin on
 if has('vim_starting')
 	if has('win32') || has('win64')
 		set runtimepath+=$VIM/bundle/neobundle.vim/
-		call neobundle#rc(expand('/Program Files/Vim/bundle'))
+		call neobundle#begin(expand('/Program Files/Vim/bundle'))
+		NeoBundleFetch 'Shougo/neobundle.vim'
+		call neobundle#end()
 	else	
 		set runtimepath+=~/.vim/bundle/neobundle.vim/
-		call neobundle#rc(expand('~/.vim/bundle'))
+		call neobundle#begin(expand('~/.vim/bundle'))
+		NeoBundleFetch 'Shougo/neobundle.vim'
+		call neobundle#end()
 	endif
 endif
 
 NeoBundle 'Shougo/neobundle.vim'
-NeoBundleFetch 'Shougo/neobundle.vim'
 
 NeoBundle 'Shougo/vimproc',{
 	\'build' :{
@@ -43,6 +46,7 @@ NeoBundle "tomtom/tcomment_vim"
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'kovisoft/slimv'
+NeoBundle 'amdt/vim-niji'
 
 if has('win32') || has('win64')
 	NeoBundle 'taku25/VisualStudioController'
