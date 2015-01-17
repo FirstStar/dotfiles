@@ -1,2 +1,2 @@
-filetype on
-filetype plugin indent on
+filetype off
+filetype plugin indent off

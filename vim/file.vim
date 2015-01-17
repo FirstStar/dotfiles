@@ -1,15 +1,20 @@
 " Lisp...common lisp, scheme, clojure
-au BufNewFile,BufRead *.clsp setf filetype=lisp
-au BufNewFile,BufRead *.shm setf filetype=lisp
-au BufNewFile,BufRead *.cjr setf filetype=lisp
+autocmd BufNewFile,BufRead *.clisp setf filetype=lisp
+autocmd BufNewFile,BufRead *.scheme setf filetype=lisp
+autocmd BufNewFile,BufRead *.slisp setf filetype=lisp
+autocmd BufNewFile,BufRead *.clojure setf filetype=lisp
+autocmd BufNewFile,BufRead *.cjr setf filetype=lisp
 
 " C++
-au BufNewFile,BufRead *.h setf filetype=cpp
-au BufNewFile,BufRead *.hpp setf filetype=cpp
-au BufNewFile,BufRead *.m setf filetype=cpp
+autocmd BufNewFile,BufRead *.h setf filetype=cpp
+autocmd BufNewFile,BufRead *.hpp setf filetype=cpp
+autocmd BufNewFile,BufRead *.m setf filetype=cpp
 
 " C#
-au BufNewFile,BufRead *.xaml.cs setf filetype=cs
+autocmd BufNewFile,BufRead *.xaml.cs setf filetype=cs
 
 " Apple Swift
-au BufNewFile,BufRead *.swift setf filetype=swift
+autocmd BufNewFile,BufRead *.swift setf filetype=swift
+
+" Markdown
+autocmd BufNewFile,BufRead *.md set filetype=markdown
