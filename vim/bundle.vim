@@ -37,6 +37,7 @@ NeoBundle 'thinca/vim-quickrun'
 NeoBundle "osyo-manga/shabadou.vim"
 NeoBundle "osyo-manga/vim-watchdogs"
 NeoBundle "osyo-manga/unite-quickfix"
+NeoBundle 'osyo-manga/vim-marching'
 NeoBundle "jceb/vim-hier"
 NeoBundle "rhysd/wandbox-vim"
 NeoBundle "rizzatti/dash.vim"
@@ -47,6 +48,7 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'kovisoft/slimv'
 NeoBundle 'amdt/vim-niji'
+NeoBundle 't9md/vim-quickhl'
 
 if has('win32') || has('win64')
 	NeoBundle 'taku25/VisualStudioController'

@@ -13,4 +13,5 @@ else
 	source ~/.dotfiles/vim/plugin.vim
 	source ~/.dotfiles/vim/color.vim
 	source ~/.dotfiles/vim/keymap.vim
+	source ~/.dotfiles/vim/lang.vim
 endif
