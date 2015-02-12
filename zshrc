@@ -162,3 +162,4 @@ esac
 
 if [ "$TMUX" = "" ]; then TERM=xterm-256color tmux; fi
 # vim:set ft=zsh:
+eval "$(rbenv init -)"
