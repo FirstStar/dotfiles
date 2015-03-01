@@ -11,20 +11,31 @@ let g:quickrun_config = {
 \		"hook/neko/wait" : 20,
 \		"hook/close_quickfix/enable_success" : 1,
 \		"outputter/buffer/split" : ":botright 8sp",
+\		"hook/time/enable" : 1,
 \		"runner" : "vimproc",
 \		"runner/vimproc/updatetime" : 60,
 \	},
+\	"cpp/clang/11" : {
+\		"command" : "clang++",
+\		"cmdopt" : "-Wall -std=c++11",
+\	},
+\	"cpp/clang/1y" : {
+\		"command" : "clang++",
+\		"cmdopt" : "-Wall -std=c++1y",
+\	},
+\	"cpp/opencv" : {
+\		"command" : "clang++",
+\		"cmdopt" : "-Wall -std=c++11 -I/usr/local/include/opencv2 -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d - lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann",
+\	},
+\	"clang/opencl" : {
+\		"command" : "clang",
+\		"cmdopt" : "-Wall -framework OpenCL",
+\	},
+\	"cpp/opencl" : {
+\		"command" : "clang++",
+\		"cmdopt" : "-Wall -std=c++11 -framework OpenCL",
+\	}
 \}
-
-" swift
-let g:quickrun_config = {
-	\	"swift" : {
-	\	"command" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift",
-	\	"cmdopt" : "",
-	\	"hook/time/enable" : 1,
-	\	},
-\}
-
 
 call watchdogs#setup(g:quickrun_config)
 let g:watchdogs_check_BufWritePost_enable = 1
