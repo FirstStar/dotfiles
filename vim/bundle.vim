@@ -26,9 +26,11 @@ NeoBundle 'Shougo/vimproc',{
  \}
 
 NeoBundle 'Shougo/neosnippet.vim'
-NeoBundle 'Shougo/neocomplcache'
+"NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'Shougo/neocomlete.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'OmniSharp/omnisharp-vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'Shougo/vimfiler.vim'
 NeoBundle 'itchyny/lightline.vim'
@@ -46,7 +48,7 @@ NeoBundle "tpope/vim-fugitive"
 NeoBundle "tomtom/tcomment_vim"
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'bronson/vim-trailing-whitespace'
-NeoBundle 'kovisoft/slimv'
+"NeoBundle 'kovisoft/slimv'
 NeoBundle 'amdt/vim-niji'
 NeoBundle 't9md/vim-quickhl'
 

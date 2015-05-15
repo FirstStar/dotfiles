@@ -15,26 +15,42 @@ let g:quickrun_config = {
 \		"runner" : "vimproc",
 \		"runner/vimproc/updatetime" : 60,
 \	},
-\	"cpp/clang/11" : {
+\}
+
+" C++'11 Clang
+let g:quickrun_config = {
+\	"cpp/clang" : {
 \		"command" : "clang++",
 \		"cmdopt" : "-Wall -std=c++11",
 \	},
-\	"cpp/clang/1y" : {
+\	"chino" : {
 \		"command" : "clang++",
-\		"cmdopt" : "-Wall -std=c++1y",
+\		"cmdopt" : "-Wall -std=c++11",
 \	},
+\}
+
+" C++'11 Clang with OpenCV / OpenCV2
+let g:quickrun_config = {
 \	"cpp/opencv" : {
 \		"command" : "clang++",
 \		"cmdopt" : "-Wall -std=c++11 -I/usr/local/include/opencv2 -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d - lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann",
 \	},
+\}
+
+" C Clang with OpenCL
+let g:quickrun_config = {
 \	"clang/opencl" : {
 \		"command" : "clang",
 \		"cmdopt" : "-Wall -framework OpenCL",
 \	},
+\}
+
+" C++ Clang with OpenCL
+let g:quickrun_config = {
 \	"cpp/opencl" : {
 \		"command" : "clang++",
 \		"cmdopt" : "-Wall -std=c++11 -framework OpenCL",
-\	}
+\	},
 \}
 
 call watchdogs#setup(g:quickrun_config)
