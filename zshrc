@@ -115,6 +115,75 @@ alias tweet='tw'
 alias clojure='lein repl'
 
 ########################################
+# 江添コマンド
+alias emacs='echo vimではない。'
+alias sl='echo lsではない。'
+alias これは質問か？='echo 質問だ。'
+
+alias :q='echo vimではない。'
+alias :wq='echo vimではない。'
+alias :w='echo vimではない。'
+alias q='echo vimではない。'
+alias wq='echo vimではない。'
+alias w='echo vimではない。'
+
+function command_not_found_handler(){
+	echo 'コマンドではない。'
+	}
+
+case ${OSTYPE} in
+darwin*)
+	#Mac用の江添
+	alias apt-get='echo Debian系Linuxではない。'
+	alias pacman='echo ArchLinuxではない。'
+	alias emerge='echo GentooLinuxではない。'
+	;;
+linux*)
+	#Linux用の江添
+	alias brew='echo Macではない。'
+	;;
+esac
+
+########################################
+# ご注文はコマンドですか？
+
+# llvm clangによるC++'11, C++14に対応したコンパイラの起動
+alias chino='clang++ -Wall -std=c++1y '
+
+# Intel C++ CompilerによるC++'11に対応したコンパイラの起動
+alias cocoa='icc -std=c++11 '
+
+# OpenCL, C++'11, C++'14に対応させたllvm clangコンパイラの起動
+case ${OSTYPE} in
+darwin*)
+	alias chiya='clang++ -Wall -std=c++1y -framework opencl -arch x86_64 '
+	;;
+esac
+
+# OpenMP v3.1, C++'11, C++'14に対応させたllvm clangコンパイラの起動
+alias syaro='clang-omp++ -Wall -std=c++1y -fopenmp '
+
+# OpenMP v4.0, C++'11に対応させたgccコンパイラの起動
+alias rize='g++ -std=gnu++1y -fopenmp '
+
+########################################
+function peco-select-history() {
+    local tac
+    if which tac > /dev/null; then
+        tac="tac"
+    else
+        tac="tail -r"
+    fi
+    BUFFER=$(history -n 1 | \
+        eval $tac | \
+        peco --query "$LBUFFER")
+    CURSOR=$#BUFFER
+    zle clear-screen
+}
+zle -N peco-select-history
+bindkey '^r' peco-select-history
+
+########################################
 # git command alias
 alias commit='git commit -a -m'
 alias pull='git pull'
