@@ -112,6 +112,9 @@ alias lvim='vim -l'
 alias gcc='gcc-4.9'
 alias g++='g++-4.9'
 
+alias objdump='gobjdump'
+alias readelf='greadelf'
+
 alias tmls='tmux list-sessions'
 alias tattach='tmux attach-session -t'
 alias trename='tmux rename-session -t'
