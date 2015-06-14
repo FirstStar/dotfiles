@@ -26,8 +26,7 @@ NeoBundle 'Shougo/vimproc',{
  \}
 
 NeoBundle 'Shougo/neosnippet.vim'
-"NeoBundle 'Shougo/neocomplcache'
-NeoBundle 'Shougo/neocomlete.vim'
+NeoBundle 'Shougo/neocomplete'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'OmniSharp/omnisharp-vim'
