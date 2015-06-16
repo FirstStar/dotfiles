@@ -165,7 +165,7 @@ alias chino='clang++ -Wall -std=c++1y '
 
 # Intel C++ CompilerによるC++'11とIntel Building Threading Blocksに対応したコンパイラの起動
 
-alias cocoa='icpc -std=c++11 -I /opt/intel/composer_xe_2015/tbb/include -tbb '
+alias cocoa='icpc -std=c++11 -tbb '
 
 # OpenCL, C++'11, C++'14に対応させたllvm clangコンパイラの起動
 case ${OSTYPE} in
