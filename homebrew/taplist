@@ -1,3 +1,7 @@
 caskroom/cask
 homebrew/dupes
+homebrew/fuse
+homebrew/python
 homebrew/science
+homebrew/versions
+homebrew/x11
