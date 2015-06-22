@@ -4,17 +4,9 @@ export TERM=screen-256color
 
 case ${OSTYPE} in
 	darwin*)
-	export PATH=/usr/local/bin:/usr/bin:/bin:/sbin:/usr/texbin:/usr/local/waiwaibin:/opt/intel/composer_xe_2015
+	export PATH=/usr/local/bin:/usr/local/opt/llvm/bin:/usr/bin:/bin:/sbin:/usr/texbin:/usr/local/waiwaibin:/opt/intel/bin
 
-	export INTEL_PA=/opt/intel
-	export INTEL_INCLUDE=$INTEL_PA/include:$INTEL_PA/tbb/include:$INTEL_PA/ipp/include:$INTEL_PA/mkl/include
-	export INTEL_LIB=$INTEL_PA/lib:$INTEL_PA/tbb/lib:$INTEL_PA/tbb/lib/libc++:$INTEL_PA/ipp/lib:$INTEL_PA/mkl/lib
-
-	export C_INCLUDE_PATH=$C_INCLUDE_PATH:$INTEL_INCLUDE
-	export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$INTEL_INCLUDE
-	export LIBRARY_PATH=$LIBRARY_PATH:$INTEL_LIB
-	export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$INTEL_LIB
-	export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$INTEL_LIB
+	source /opt/intel/bin/iccvars.sh intel64
 	;;
 esac
 
@@ -118,7 +110,7 @@ alias lvim='vim -l'
 alias gcc='gcc-4.9'
 alias g++='g++-4.9'
 
-alias objdump='gobjdump'
+alias objdump='llvm-objdump'
 alias readelf='greadelf'
 
 alias tmls='tmux list-sessions'
@@ -169,9 +161,9 @@ esac
 # llvm clangによるC++'11, C++14に対応したコンパイラの起動
 alias chino='clang++ -Wall -std=c++1y '
 
-# Intel C++ CompilerによるC++'11とIntel Building Threading Blocksに対応したコンパイラの起動
+# Intel C++ CompilerによるC++'14とIntel Building Threading Blocksに対応したコンパイラの起動
 
-alias cocoa='icpc -std=c++11 -tbb '
+alias cocoa='icpc -std=c++1y -tbb '
 
 # OpenCL, C++'11, C++'14に対応させたllvm clangコンパイラの起動
 case ${OSTYPE} in
