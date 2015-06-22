@@ -4,15 +4,7 @@ export TERM=screen-256color
 
 case ${OSTYPE} in
 	darwin*)
-	export PATH=/usr/local/bin:/usr/local/opt/llvm/bin:/usr/bin:/bin:/sbin:/usr/texbin:/usr/local/waiwaibin:/opt/intel/composer_xe_2015
-
-	export INTEL_PA=/opt/intel
-	export INTEL_INCLUDE=$INTEL_PA/include:$INTEL_PA/tbb/include:$INTEL_PA/ipp/include:$INTEL_PA/mkl/include
-	export INTEL_LIB=$INTEL_PA/lib:$INTEL_PA/tbb/lib:$INTEL_PA/tbb/lib/libc++:$INTEL_PA/ipp/lib:$INTEL_PA/mkl/lib
-
-	export C_INCLUDE_PATH=/usr/include
-	export CPLUS_INCLUDE_PATH=/usr/local/opt/gcc5/include/c++/5.1.0:/usr/local/opt/gcc5/include/c++/5.1.0/x86_64-apple-darwin14.3.0/:/usr/local/include:$INTEL_INCLUDE
-	export LIBRARY_PATH=/usr/local/lib/gcc/5:$INTEL_LIB
+	export PATH=/usr/local/bin:/usr/local/opt/llvm/bin:/usr/bin:/bin:/sbin:/usr/texbin:/usr/local/waiwaibin:/opt/intel/bin
 
 	source /opt/intel/bin/iccvars.sh intel64
 	;;
