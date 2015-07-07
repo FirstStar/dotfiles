@@ -40,7 +40,9 @@ call neobundle#begin(expand('~/.vim/bundle'))
 	NeoBundle "osyo-manga/shabadou.vim"
 	NeoBundle "osyo-manga/vim-watchdogs"
 	NeoBundle "osyo-manga/unite-quickfix"
-	NeoBundle 'osyo-manga/vim-marching'
+	NeoBundle 'vim-jp/cpp-vim'
+	"NeoBundle 'osyo-manga/vim-marching'
+	NeoBundle 'Rip-Rip/clang_complete'
 	NeoBundle "jceb/vim-hier"
 	NeoBundle "rhysd/wandbox-vim"
 	NeoBundle "rizzatti/dash.vim"
@@ -49,8 +51,8 @@ call neobundle#begin(expand('~/.vim/bundle'))
 	NeoBundle "tomtom/tcomment_vim"
 	NeoBundle 'nathanaelkane/vim-indent-guides'
 	NeoBundle 'bronson/vim-trailing-whitespace'
-	"NeoBundle 'kovisoft/slimv'
-	NeoBundle 'amdt/vim-niji'
+	NeoBundle 'kovisoft/slimv'
+	"NeoBundle 'amdt/vim-niji'
 	NeoBundle 't9md/vim-quickhl'
 
 if has('win32') || has('win64')

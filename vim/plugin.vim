@@ -12,5 +12,5 @@ else
 	source ~/.dotfiles/vim/vimplugin/unite.vim
 	source ~/.dotfiles/vim/vimplugin/runs.vim
 	source ~/.dotfiles/vim/vimplugin/lisp.vim
-	source ~/.dotfiles/vim/vimplugin/vim-marching.vim
+	source ~/.dotfiles/vim/vimplugin/clang_complete.vim
 endif
