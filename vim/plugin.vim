@@ -13,4 +13,5 @@ else
 	source ~/.dotfiles/vim/vimplugin/runs.vim
 	source ~/.dotfiles/vim/vimplugin/lisp.vim
 	source ~/.dotfiles/vim/vimplugin/clang_complete.vim
+	source ~/.dotfiles/vim/vimplugin/watchdogs.vim
 endif

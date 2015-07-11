@@ -44,6 +44,7 @@ call neobundle#begin(expand('~/.vim/bundle'))
 	"NeoBundle 'osyo-manga/vim-marching'
 	NeoBundle 'Rip-Rip/clang_complete'
 	NeoBundle "jceb/vim-hier"
+	NeoBundle "dannyob/quickfixstatus"
 	NeoBundle "rhysd/wandbox-vim"
 	NeoBundle "rizzatti/dash.vim"
 	NeoBundle "Shougo/vimshell.vim"
