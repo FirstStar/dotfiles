@@ -1,6 +1,6 @@
 augroup cpp-path
 	autocmd!
-	autocmd FileType cpp setlocal path=.,/usr/local/include/c++/5.1.0,/usr/local/include/boost,/opt/intel/tbb/include,/opt/intel/ipp/include,/opt/intel/mkl/include
+	autocmd FileType cpp setlocal path+=.,/usr/local/include/boost,/opt/intel/tbb/include,/opt/intel/ipp/include,/opt/intel/mkl/include
 augroup END
 
 function! s:cpp()
