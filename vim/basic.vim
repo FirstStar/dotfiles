@@ -20,6 +20,3 @@ set viminfo=
 
 set list
 set listchars=tab:\ \ ,trail:\ ,extends:<
-
-set nocindent
-let lisp_raingbow = 1

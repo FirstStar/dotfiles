@@ -25,18 +25,10 @@ alias clojure='lein repl'
 alias commit='git commit -a -m'
 alias pull='git pull'
 alias push='git push -u'
+alias zoi='git commit --allow-empty -m "今日も1日頑張るぞい！"'
 
 alias clang++cv='clang++ -Wall -std=c++11 -I/usr/local/include/opencv2 -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d - lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann'
 alias clang++cl='clang++ -Wall -std=c++11 -framework OpenCL'
-
-# うさぎですか？
-alias chino='clang++ -Wall -std=c++11 -I/usr/local/include/boost'
-alias cocoa='clang++ -Wall -std=c++1y -I/usr/local/include/boost'
-alias rize=''
-alias sharo=''
-alias chiya=''
-alias megu=''
-alias maya=''
 
 # enable sudo after command alias
 alias sudo='sudo '

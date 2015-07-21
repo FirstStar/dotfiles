@@ -18,7 +18,7 @@ alias w='echo vimではない。'
 
 # Handler関係
 function command_not_found_handler(){
-echo 'コマンドではない。'
+	echo 'コマンドではない。'
 }
 
 # OS依存系

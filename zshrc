@@ -104,7 +104,6 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 alias mkdir='mkdir -p'
-alias emacs='vim'
 alias rvim='vim -R'
 alias lvim='vim -l'
 alias gcc='gcc-4.9'
@@ -127,7 +126,6 @@ alias clojure='lein repl'
 
 ########################################
 # 江添コマンド
-alias emacs='echo vimではない。'
 alias sl='echo lsではない。'
 alias これは質問か？='echo 質問だ。'
 
