@@ -14,6 +14,7 @@ if !exists('g:neocomolete#force_omni_input_patterns')
 endif
 let g:neocomolete#force_omni_input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\w*\|\h\w*::\w*'
 
+let g:neocomolete#force_overwrite_completefunc = 1
 
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<S-TAB>"
