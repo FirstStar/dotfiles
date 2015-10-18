@@ -20,3 +20,6 @@ set viminfo=
 
 set list
 set listchars=tab:\ \ ,trail:\ ,extends:<
+
+set backupskip=/tmp/*,/private/tmp/*
+

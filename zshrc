@@ -2,10 +2,11 @@
 export LANG=ja_JP.UTF-8
 export TERM=screen-256color
 
+export EDITOR=/usr/local/bin/vim
+
 case ${OSTYPE} in
 	darwin*)
-	export PATH=/usr/local/bin:/usr/local/opt/llvm/bin:/usr/bin:/bin:/sbin:/usr/texbin:/usr/local/waiwaibin:/opt/intel/bin
-
+	export PATH=/usr/local/bin:/usr/local/opt/llvm/bin:/usr/bin:/bin:/sbin:/usr/texbin:/usr/local/sbin:/opt/intel/bin
 	source /opt/intel/bin/iccvars.sh intel64
 	;;
 esac
@@ -124,6 +125,8 @@ alias tweet='tw'
 
 alias clojure='lein repl'
 
+alias repl='clisp ~/.vim/bundle/slimv/slime/start-swank.lisp'
+
 ########################################
 # 江添コマンド
 alias sl='echo lsではない。'
@@ -154,10 +157,14 @@ linux*)
 esac
 
 ########################################
+# 令呪コマンド
+alias 令呪を以って命ずる='sudo'
+
+########################################
 # ご注文はコマンドですか？
 
 # llvm clangによるC++'11, C++14に対応したコンパイラの起動
-alias chino='clang++ -Wall -std=c++1y '
+alias chino='clang++ -Wall -std=c++1z'
 
 # Intel C++ CompilerによるC++'14とIntel Building Threading Blocksに対応したコンパイラの起動
 
