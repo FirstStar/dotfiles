@@ -3,11 +3,13 @@ export LANG=ja_JP.UTF-8
 export TERM=screen-256color
 
 export EDITOR=/usr/local/bin/vim
+export XDG_CONFIG_HOME=~/.config # XDG Base Directory Specification
 
 case ${OSTYPE} in
 	darwin*)
-	export PATH=/usr/local/bin:/usr/local/opt/llvm/bin:/usr/bin:/bin:/sbin:/usr/texbin:/usr/local/sbin:/opt/intel/bin
-	source /opt/intel/bin/iccvars.sh intel64
+	export PATH=/usr/sbin:/usr/local/bin:/usr/local/opt/llvm/bin:/usr/bin:/bin:/sbin:/usr/local/sbin:~/.nodebrew/current/bin:/usr/local/texlive/2015basic/bin/universal-darwin
+	export NODEBREW_ROOT=/usr/local/var/nodebrew
+	# /opt/intel/bin/compilervars.sh intel64
 	;;
 esac
 
@@ -128,6 +130,10 @@ alias clojure='lein repl'
 alias repl='clisp ~/.vim/bundle/slimv/slime/start-swank.lisp'
 
 ########################################
+# automatic ls
+function chpwd() { ls }
+
+########################################
 # 江添コマンド
 alias sl='echo lsではない。'
 alias これは質問か？='echo 質問だ。'
@@ -140,7 +146,8 @@ alias wq='echo vimではない。'
 alias w='echo vimではない。'
 
 function command_not_found_handler(){
-	echo 'コマンドではない。'
+	# open ~/.大川隆法/ookawaryuho.jpg
+	echo "コマンドではない."
 	}
 
 case ${OSTYPE} in
