@@ -46,16 +46,16 @@ call neobundle#begin(expand('~/.vim/bundle'))
 	NeoBundle "jceb/vim-hier"
 	NeoBundle "dannyob/quickfixstatus"
 	NeoBundle "rhysd/wandbox-vim"
-	NeoBundle "rizzatti/dash.vim"
+	"NeoBundle "rizzatti/dash.vim"
 	NeoBundle "Shougo/vimshell.vim"
 	NeoBundle "tpope/vim-fugitive"
 	NeoBundle "tomtom/tcomment_vim"
 	NeoBundle 'nathanaelkane/vim-indent-guides'
 	NeoBundle 'bronson/vim-trailing-whitespace'
-	NeoBundle 'kovisoft/slimv'
+	"NeoBundle 'kovisoft/slimv'
 	"NeoBundle 'amdt/vim-niji'
 	NeoBundle 't9md/vim-quickhl'
-
+	NeoBundle 'Shougo/vinarise'
 if has('win32') || has('win64')
 	NeoBundle 'taku25/VisualStudioController'
 	NeoBundle 'taku25/vim-visualstudio'
