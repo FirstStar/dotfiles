@@ -121,13 +121,10 @@ alias trename='tmux rename-session -t'
 alias tkill='tmux kill-session -t'
 alias tkillall='tmux kill-server'
 
-alias reply='tw'
-alias timeline='tw --timeline'
-alias tweet='tw'
-
 alias clojure='lein repl'
-
 alias repl='clisp ~/.vim/bundle/slimv/slime/start-swank.lisp'
+
+alias julia='exec /Applications/Julia-0.4.6.app/Contents/Resources/julia/bin/julia'
 
 ########################################
 # automatic ls
