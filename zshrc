@@ -124,7 +124,7 @@ alias tkillall='tmux kill-server'
 alias clojure='lein repl'
 alias repl='clisp ~/.vim/bundle/slimv/slime/start-swank.lisp'
 
-alias julia='exec /Applications/Julia-0.4.6.app/Contents/Resources/julia/bin/julia'
+alias julia='/Applications/Julia-0.4.6.app/Contents/Resources/julia/bin/julia'
 
 ########################################
 # automatic ls
