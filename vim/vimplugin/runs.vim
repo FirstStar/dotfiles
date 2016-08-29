@@ -21,10 +21,6 @@ let g:quickrun_config = {
 \	"cpp/clang" : {
 \		"command" : "clang++",
 \		"cmdopt" : "-Wall -std=c++11",
-\	},
-\	"cpp/icc" : {
-\		"command" : "icpc",
-\		"cmdopt" : "-std=c++1y",
 \	}
 \}
 
@@ -40,8 +36,5 @@ let g:quickrun_config['qml/qmlscene'] = {
 \	'runner'	:	'vimproc',
 \ }
 
-
-
 call watchdogs#setup(g:quickrun_config)
 let g:watchdogs_check_BufWritePost_enable = 1
-

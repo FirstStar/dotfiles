@@ -1,2 +1,2 @@
-set runtimepath+=~/.config/nvim/setting
-runtime! setting/*.vim
+set runtimepath+=~/.config/nvim/vimset
+runtime! vimset/*.vim
